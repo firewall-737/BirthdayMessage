@@ -31,7 +31,9 @@
 
     <script>
         // Set the date and time for the birthday
-        const birthday = new Date("February 11, 2025 12:00:00").getTime();
+        // Set the date and time for the birthday in local timezone
+        const birthday = new Date(2025, 1, 11, 0, 0, 0).getTime(); // February is month 1 (0-based index)
+
 
         // Update the countdown every second
         const timerInterval = setInterval(function () {
