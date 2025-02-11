@@ -1,61 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Special Message</title>
-    <style>
-        body {
-            background-color: pink;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #ff69b4;
-        }
-        p {
-            font-size: 1.5rem;
-        }
-        #timer {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #d63384;
-            margin-top: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>A Little Pre-Birthday Gift</h1>
-    <p>This domain is yours, with love!</p>
-    <div id="timer"></div>
-
-    <script>
-        // Set the date and time for the birthday
-        // Set the date and time for the birthday in local timezone
-        const birthday = new Date(2025, 1, 11, 0, 0, 0).getTime(); // February is month 1 (0-based index)
-
-
-        // Update the countdown every second
-        const timerInterval = setInterval(function () {
-            const now = new Date().getTime();
-            const distance = birthday - now;
-
-            // Calculate days, hours, minutes, and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the countdown
-            document.getElementById("timer").innerHTML = 
-                `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
-
-            // If the countdown is over
-            if (distance < 0) {
-                clearInterval(timerInterval);
-                document.getElementById("timer").innerHTML = "Happy birthday, Love 🎉";
-            }
-        }, 1000);
-    </script>
+    <h1>Hi, I’m Jhansi</h1>
+    <p>A Ph.D. scholar in IIIT Hyderabad</p>
+    
+    <h2>Interests</h2>
+    <ul>
+        <li>Speech Processing</li>
+        <li>Speech Prosody Modeling</li>
+        <li>Expressive Speech Synthesis</li>
+        <li>ML-based Pathological Speech Assessment</li>
+        <li>Unsupervised Learning</li>
+    </ul>
+    
+    <h2>Current Work</h2>
+    <p>Modeling better representations of prosodic cues like stress and intonation in an unsupervised manner.</p>
+    
+    <h2>Collaboration</h2>
+    <p>Looking to collaborate on prosody-based speech applications.</p>
+    
+    <h2>Contact</h2>
+    <p>You can reach me through my Gmail: <a href="mailto:jhansimallela5@gmail.com">jhansimallela5@gmail.com</a></p>
 </body>
 </html>
